@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as v;
+
+div.hero-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 134px;
+  position: relative;
+}
+
+.contenedor {
+  position: relative;
+  padding-left: 160px;
+  padding-right: 160px;
+  background: v.$color-fondo1;
+  height: 1080px;
+  width: 1920px;
+  z-index: 0;
+  overflow: hidden;
+}

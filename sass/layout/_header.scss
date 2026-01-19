@@ -1,0 +1,35 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables" as v;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 37px;
+}
+
+ul.navegacion {
+  @include mixins.reset-list();
+  display: flex;
+  gap: 48px;
+  padding-right: 180px;
+  a {
+    text-decoration: none;
+    font-weight: 400px;
+    font-size: 18px;
+    position: relative;
+    padding-bottom: 8px;
+  }
+  a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: v.$color-button;
+  }
+  a:hover::after {
+    width: 100%;
+  }
+}

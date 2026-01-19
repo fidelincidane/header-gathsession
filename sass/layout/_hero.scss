@@ -1,0 +1,67 @@
+@use "../abstracts/variables" as v;
+
+div.hero {
+  flex: 1;
+  width: 400px;
+
+  h1 {
+    font-size: 87px;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  p {
+    width: 648px;
+    margin-top: 24px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    opacity: 0.5;
+  }
+
+  div.botones {
+    margin-top: 32px;
+    display: flex;
+    gap: 32px;
+    align-items: baseline;
+  }
+
+  a.button {
+    text-align: center;
+    width: 240px;
+    height: 60px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(219, 42, 107, 0.4);
+    }
+  }
+
+  a.learn-more {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: v.$color-p;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    img {
+      margin-left: 8px;
+      vertical-align: middle;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover img {
+      transform: translateX(5px);
+    }
+  }
+}

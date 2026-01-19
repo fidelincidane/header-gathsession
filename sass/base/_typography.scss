@@ -1,0 +1,11 @@
+@use "../abstracts/variables" as v;
+
+h1 {
+  color: v.$color-h;
+}
+p {
+  color: v.$color-p;
+}
+a {
+  color: v.$color-a;
+}
