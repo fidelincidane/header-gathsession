@@ -1,7 +1,10 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/header-gathsession/",
+  base: "./",
+  build: {
+    outDir: "docs",
+  },
   css: {
     preprocessorOptions: {
       scss: {
